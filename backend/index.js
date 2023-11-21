@@ -52,9 +52,7 @@ app.get('/', (req, res) => {
 
 
 // CONNECT TO OPEN AI
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_KEY
-});
+const openai = new OpenAI();
 
 app.get('/', (req, res) => {
     console.log(req.body);
